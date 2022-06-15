@@ -25,7 +25,7 @@ app.get("/", (req, res) => {
   res.status(200).send("Hello world");
 });
 
-const registerTerminalHandlers = require("./socketHandler/terminalHandler");
+const registerTerminalHandlers = require("./socketHandler/fileHandler");
 
 const onConnection = (socket) => {
   registerTerminalHandlers(io, socket);

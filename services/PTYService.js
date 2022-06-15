@@ -1,5 +1,6 @@
 const os = require("os");
 const pty = require("node-pty");
+require("dotenv").config();
 
 class PTY {
   constructor(socket) {
